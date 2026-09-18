@@ -1103,6 +1103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317907650}
   - component: {fileID: 1317907649}
+  - component: {fileID: 1317907651}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1154,6 +1155,25 @@ Transform:
   - {fileID: 753437543}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1317907651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317907648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0695ac3653e13ab49837dc84f2380d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  orientation: {fileID: 753437543}
+  whatisgrd:
+    serializedVersion: 2
+    m_Bits: 1
+  playerhigt: 2
+  speed: 2
+  groundrag: 6
 --- !u!1 &1375585838
 GameObject:
   m_ObjectHideFlags: 0
