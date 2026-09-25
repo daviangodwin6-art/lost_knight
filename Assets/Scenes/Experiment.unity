@@ -1172,8 +1172,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   playerhigt: 2
-  speed: 2
-  groundrag: 6
+  speed: 8
+  jumpforce: 5
+  jumpmutilier: 2
+  jumpcooldown: 0.5
+  fallMultiplier: 25
+  groundrag: 5
 --- !u!1 &1375585838
 GameObject:
   m_ObjectHideFlags: 0

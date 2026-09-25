@@ -95,6 +95,15 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection = orientation.forward * moveInput.y + orientation.right * moveInput.x;
         rb.AddForce(moveDirection.normalized * speed * 10f, ForceMode.Force);
+        if (grounded)
+        {
+            rb.AddForce(moveDirection.normalized * speed * 10f ,ForceMode.Force);
+
+        }
+        else if(!grounded)
+        {
+            
+        }
     }
     private void controlspd()
     {
@@ -113,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void resetjump()
     {
-        readyToJump = true;
+        readyToJump = true; 
     }
     private void applyFallForce()
     {
